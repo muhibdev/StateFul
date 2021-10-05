@@ -1,6 +1,0 @@
-import { VARIABLES_COVER_START, VARIABLES_COVER_END, VARIABLES_COVER_REPLACE_WITH } from '../Configration';
-
-export const removBracket = (element) =>
-	element
-		.replaceAll(VARIABLES_COVER_START, VARIABLES_COVER_REPLACE_WITH)
-		.replaceAll(VARIABLES_COVER_END, VARIABLES_COVER_REPLACE_WITH);
