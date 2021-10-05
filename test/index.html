@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>StateFull</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="statefull">
+      <a href="#" id="prev" class="prev">
+        <span> Prev Contact</span>
+      </a>
+      <div class="card">
+        <div> <img src="{{img}}" alt="{{name}}">
+          <a href="mailto:{{email}}">Contact</a>
+        </div>
+        <div>
+          <h1>{{name}}</h1>
+          <p>Age: <b>{{age}}</b></p>
+          <p>Gender {{gender}}</p>
+          <p>From: <b>{{country}}</b></p>
+          <p>phone: <b>{{phone}}</b></p>
+          <p>Username: <b>{{username}}</b></p>
+          <p>Password: <b>{{password}}</b></p>
+          <p>Date Of Birth: <b>{{date_of_birth}}</b></p>
+          <p>Email: <b>{{email}}</b></p>
+        </div>
+      </div>
+      <a href="#" id="next" class="next">
+        <span>Next Contact</span>
+      </a>
+    </div>
+
+    <div class="statefull-list">
+      <!-- list Items Goee here -->
+    </div>
+  </div>
+
+
+
+  <script src="../dist//main.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
