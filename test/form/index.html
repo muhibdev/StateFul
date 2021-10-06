@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="form-container" class="container">
+
+    <form class="view">
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name">
+
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email Address">
+
+      <label for="gender">Gender</label>
+      <select name="gender" id="gender">
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+      <input type="submit" value="Submit">
+
+
+    </form>
+
+    <div class="state">
+      <pre class="code-container">
+<code>
+<span class="keyword">const</span> <span class="def">State</span><span class="oprator"> = </span><span
+class="bracket">{</span>
+  <span class="property-key" >name</span> <span class="colon" >:</span><span class="quote" >"</span><span class="property-value">{{name}}</span><span class="quote">"</span><span class="coma"> ,</span>
+  <span class="property-key" >email</span> <span class="colon" >:</span> <span class="quote">"</span><span class="property-value">{{email}}</span><span class="quote">"</span><span class="coma"> ,</span>
+  <span class="property-key" >gender</span> <span class="colon" >:</span> <span class="quote">"</span><span class="property-value">{{gender}}</span><span class="quote">"</span><span class="coma"> ,</span>
+  <span class="property-key" >message</span><span class="colon" >:</span> <span class="quote">"</span><span class="property-value">{{message}}</span><span class="quote">"</span>
+<span class="bracket" >}</span>
+</code>
+</pre>
+    </div>
+
+  </div>
+  <script src="../../dist/main.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,6 @@
 import { C, CA, F, Q, QA } from '../Utils/DOM';
 import { removBracket } from '../Utils/helper';
+import { VARIABLES_COVER_REPLACE_WITH } from '../Configration';
 
 import API from './Api';
 
@@ -40,6 +41,14 @@ class StateFull extends API {
 		for (const key in this.handlers) {
 			this.current.addEventListener(key, (e) => this.handlers[key](e, this.state));
 		}
+
+		/* initialize default values */
+		let variables = [...new Set(this.change.flatMap(({ variable }) => variable))];
+		variables = variables.reduce(
+			(prev, variable) => ({ ...prev, [removBracket(variable)]: VARIABLES_COVER_REPLACE_WITH }),
+			{}
+		);
+		this.setState(variables);
 	}
 
 	_genrateVariable() {

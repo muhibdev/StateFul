@@ -1,6 +1,6 @@
 module.exports = {
-	entry: './src/index.js',
-	// mode: 'development',
+	// entry: './src/index.js',
+	mode: 'development',
 	mode: 'production',
 
 	resolve: {

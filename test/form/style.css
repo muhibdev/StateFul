@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: black;
+	color: white;
+}
+/* Forms */
+
+[type='text'],
+[type='email'],
+[type='url'],
+select,
+textarea {
+	display: block;
+	padding: 0.5rem;
+	background: transparent;
+	vertical-align: middle;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	font-size: 0.95rem;
+	color: #cdcdcd;
+}
+
+[type='text']:focus,
+[type='email']:focus,
+[type='url']:focus,
+select:focus,
+textarea:focus {
+	outline: none;
+	border: 1px solid #1e6bd6;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==)
+		100% no-repeat;
+	line-height: 1;
+}
+
+label {
+	font-weight: 600;
+	font-size: 0.9rem;
+	display: block;
+	margin: 0.5rem 0;
+}
+
+/* Other */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+	padding: 1rem;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 1rem;
+	display: flex;
+	width: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.container form {
+	flex: 1 0 50%;
+	max-width: 800px;
+	padding: 3rem;
+}
+.state {
+	flex: 1 0 40%;
+	max-width: 700px;
+}
+/* Button */
+
+[type='submit'] {
+	display: inline-block;
+	vertical-align: middle;
+	white-space: nowrap;
+	cursor: pointer;
+	margin: 0.25rem 0;
+	padding: 0.5rem 1rem;
+	border: 1px solid #1e6bd6;
+	border-radius: 18px;
+	background: #1e6bd6;
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 0.95rem;
+}
+.code-container {
+	border: 1px solid #cdcdcd;
+	padding: 1rem 4rem;
+	font-size: 1.5rem;
+	height: auto;
+	color: #c7c9d3;
+}
+
+.keyword {
+	color: #ffdd40;
+}
+
+.def {
+	color: #0ebeff;
+}
+
+.oprator {
+	color: red;
+}
+
+.property-key {
+	color: #5e91f2;
+}
+.quote {
+	color: #2bc7b9;
+}
+
+.bracket {
+	color: white;
+	line-height: 1.5;
+}
+
+.property-value {
+	color: #2bc7b9;
+	word-wrap: break-word;
+	white-space: normal;
+}
